@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Liste</title>
+    <style>
+      .tamam {
+        text-decoration: line-through;
+        background-color: red;
+        color: white;
+      }
+
+      .ustunde {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Yapılacaklar</h2>
+      <ul>
+        <li>liste 1</li>
+        <li>liste 2</li>
+        <li>liste 3</li>
+        <li>liste 4</li>
+      </ul>
+    </div>
+    <hr />
+    <br />
+    <div>
+      <h1>onClick Event</h1>
+      <input type="button" value="Alert1" onclick="goster()" />
+      <button onclick="goster()">Alert2</button>
+      <button onclick="renkDegis(this, 'blue')">Basınca rengim değişsin</button>
+    </div>
+    <div>
+      <p onclick="renkDegis(this, 'red')">Basınca rengim değişir dedim.</p>
+    </div>
+    <script src="liste.js"></script>
+  </body>
+</html>
